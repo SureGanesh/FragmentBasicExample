@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kvana.fragmentbasicexample.MainActivity">
+
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start fragment one"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_two"
+        android:layout_below="@+id/button_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start fragment two"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/fragment_one"
+        android:layout_below="@+id/button_two"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_two"
+        android:layout_below="@+id/fragment_one"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+</RelativeLayout>
